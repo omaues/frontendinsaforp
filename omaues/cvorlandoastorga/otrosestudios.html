@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="shorcut icon" href="image/orlando.png">   
+    <!--bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--font awesone-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!---a continuación se declaran algunas clases para los estilos-->
+    <style>
+        .iconito-logo{
+            width: 40px;
+            height: 40px;
+        }
+        .myimage-bg{
+            background-color: #ffe4c4;
+            width: 200px;
+            margin: 0 auto;
+            border-radius: 50%;
+            border: 3px dashed rgb(16, 89, 192);
+            border-radius: 50%;
+        }
+        .myigame{
+            width: 50px;
+            height: 50px;
+        }
+        .my-migx{
+            height: 200px;
+            background-color: #afa;
+            margin: 0 auto;
+            border: 4px dotted firebrick;
+            border-radius: 25%;
+            padding-left: 25px;
+            padding-top: 15px;
+            padding-right: 15px;
+        }
+        .myfooter{
+            font-size: 40px;
+            color: deepskyblue;
+            margin-left: 100px;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+        /*puedo colocar un h1 en lugar del asterisco si lo deseo solo para h1, maximo 3 etiquetas*/
+        *{
+            font-family: 'Comic Neue', cursive;
+        }
+    </style>
+    <title>MyCV</title>
+</head>
+
+
+<body>
+    <div class="jumbotron text-center"style="margin: 0 auto;">
+        <h1>ORLANDO MIGUEL ASTORGA</h1>
+        <p>Curriculum Vitae</p>
+    </div>
+    <!---------------------------------------------------------------------------------------------------->
+    <!---La barra de MENU-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!--coloca un boton cuando el ancho de la pantalla es muy pequeño-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <!--li.nav-item>a.nav-link{Link$}*4-->
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="otrosestudios.html" class="nav-link active">Otros Estudios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="experiencialaboral.html" class="nav-link">Experiencia Laboral</a>
+                </li>
+                <li class="nav-item">
+                    <a href="habilidadesprofesionales.html" class="nav-link">Habilidades Profesionales</a>
+                </li>
+                <li class="nav-item">
+                    <a href="implementaciones.html" class="nav-link">Implementaciones</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!---------------------------------------------------------------------------------------------------->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 text-center" style="background-color: aquamarine;">
+                <h2>Acerca de mí</h2>
+                <h5>Foto:</h5>
+                <div class="myimage-bg">
+                    <img src="image/orlando.png" alt="My Picture" class="myimage">
+                </div>
+                    <p class="text-center">Soy profesional informático con más de 10 años de experiencia en el área, soy una persona autodidacta con un gran interes en las tecnologías, mi objetivo al permanecer a un equipo de trabajo es siempre ser proactivo y buscar siempre la mejora continua de todos los procesos de la empresa con el fin de optimizar los recursos para aumentar productividad y eficiencia mediante la automatización de las tareas en cada uno de los empleados.</p>
+                    <h3>Proyectos realizados:</h3>
+                    <p>Mis proyectos recientes los puedes consultar en los siguientes Links</p>
+                    <!--ul>li*3-->
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-tem">
+                            <a href="#" class="nav-link">Link5</a>
+                        </li>
+                    <li class="nav-tem">
+                        <a href="#" class="nav-link">Link6</a>
+                    </li>
+                    <li class="nav-tem">
+                        <a href="#" class="nav-link">Link7</a>
+                    </li>
+                </ul>
+            </div>
+            <!--div.col-sm-8-->
+            <div class="col-sm-8">
+                <h2>Otros Estudios</h2>
+                <p>✦ Curso de Virtualización con VmWare Esxi, Julio 2021</p>
+                <p>✦ Módulo 7 de programación en JAVA, UDB- INSAFORP 2020</p>
+                <p>✦ Ingles Pre-avanzado Módulo 3, INGLES CORPORATIVO-INSAFORP 2020</p>
+                <p>✦ CCNA módulo 3 INSAFORP 2017</p>
+                <p>✦ VI módulo de Ingles en CENIUES, Universidad de El Salvador 2013</p>
+                <p>✦ Capacitación de Windows Server 2008 R2, Ninja Web Corp. 2013</p>
+                <p>✦ Virtualización de Servidores Microsoft 2008 R2, MICROSOFT 2012</p>
+                <p>✦ Curso SQL SERVER, INSAFORP 2011</p>
+                <p>✦ Reparación y Mantenimiento de Redes, INSAFORP 2010</p>
+                <p>✦ Reparación y Mantenimiento de Computadoras, INSAFORP 2009</p>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------->
+    <div class="jumbotron text-center">
+        <h2>Footer</h2>
+        <section>
+            <a href="https://www.facebook.com">
+                <i class="fab fa-facebook-f myfooter"></i>
+            </a>
+            <a href="https://www.twitter.com">
+                <i class="fab fa-twitter myfooter"></i>
+            </a>
+            <a href="https://www.instagram.com">
+                <i class="fab fa-instagram myfooter"></i>
+            </a>
+        </section>
+    </div>
+    <!---------------------------------------------------------------------------------------------------->
+</body>
+</html>

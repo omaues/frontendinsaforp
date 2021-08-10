@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="shorcut icon" href="image/orlando.png">   
+    <!--bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--font awesone-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!---a continuación se declaran algunas clases para los estilos-->
+    <style>
+        .iconito-logo{
+            width: 40px;
+            height: 40px;
+        }
+        .myimage-bg{
+            background-color: #ffe4c4;
+            width: 200px;
+            margin: 0 auto;
+            border-radius: 50%;
+            border: 3px dashed rgb(16, 89, 192);
+            border-radius: 50%;
+        }
+        .myigame{
+            width: 50px;
+            height: 50px;
+        }
+        .my-migx{
+            height: 200px;
+            background-color: #afa;
+            margin: 0 auto;
+            border: 4px dotted firebrick;
+            border-radius: 25%;
+            padding-left: 25px;
+            padding-top: 15px;
+            padding-right: 15px;
+        }
+        .myfooter{
+            font-size: 40px;
+            color: deepskyblue;
+            margin-left: 100px;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+        /*puedo colocar un h1 en lugar del asterisco si lo deseo solo para h1, maximo 3 etiquetas*/
+        *{
+            font-family: 'Comic Neue', cursive;
+        }
+    </style>
+    <title>MyCV</title>
+</head>
+
+
+<body>
+    <div class="jumbotron text-center"style="margin: 0 auto;">
+        <h1>My CV template</h1>
+        <p>Template for use in this class</p>
+    </div>
+    <!---------------------------------------------------------------------------------------------------->
+    <!---La barra de MENU-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- <a href="#" class="navbar-brand"><img src="image/icono.jpg" alt="Logo Brand" style="width: 40px;height: 40px;"></a>-->
+        <!--otra forma para redefinir el tamaño de la imagen-->
+        <a href="#" class="navbar-brand">
+            <img src="image/icono.jpg" alt="Logo Brand" class="iconito-logo">
+        </a>
+        <!--coloca un boton cuando el ancho de la pantalla es muy pequeño-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <!--li.nav-item>a.nav-link{Link$}*4-->
+                <li class="nav-item">
+                    <a href="" class="nav-link active">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Link 3</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Link 4</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!---------------------------------------------------------------------------------------------------->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 text-center" style="background-color: aquamarine;">
+                <h2>About me</h2>
+                <h5>Photo of me:</h5>
+                <div class="myimage-bg">
+                    <img src="image/orlando.png" alt="My Picture" class="myimage">
+                </div>
+                    <p class="text-center">Some text about my things and about dark side, My Slogan...</p>
+                    <h3>Some links</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <!--ul>li*3-->
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-tem">
+                            <a href="#" class="nav-link active">Link5</a>
+                        </li>
+                    <li class="nav-tem">
+                        <a href="#" class="nav-link">Link6</a>
+                    </li>
+                    <li class="nav-tem">
+                        <a href="#" class="nav-link">Link7</a>
+                    </li>
+                </ul>
+            </div>
+            <!--div.col-sm-8-->
+            <div class="col-sm-8">
+                <h2>Title Hieading 2</h2>
+                <h3>Title of My Description, Dic 2011</h3>
+                <div class="my-migx">
+                    <p>My last Description</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem deleniti nihil sequi consequatur culpa quia recusandae et sapiente voluptates. Numquam sed cum accusamus quae, placeat dolor. Voluptates neque eligendi quis.</p>                    
+                </div>
+                <hr>
+                <h2>Title Hieading 3</h2>
+                <h3>Title of My Description, Oct 2009</h3>
+                <div class="my-migx">
+                    <p>My last Description</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem deleniti nihil sequi consequatur culpa quia recusandae et sapiente voluptates. Numquam sed cum accusamus quae, placeat dolor. Voluptates neque eligendi quis.</p>
+                </div>
+                <hr>
+                <h2>Title Hieading 4</h2>
+                <h3>Title of My Description, March 2001</h3>
+                <div class="my-migx">
+                    <p>My last Description</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem deleniti nihil sequi consequatur culpa quia recusandae et sapiente voluptates. Numquam sed cum accusamus quae, placeat dolor. Voluptates neque eligendi quis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------->
+    <div class="jumbotron text-center">
+        <h2>Footer</h2>
+        <section>
+            <a href="https://www.facebook.com">
+                <i class="fab fa-facebook-f myfooter"></i>
+            </a>
+            <a href="https://www.twitter.com">
+                <i class="fab fa-twitter myfooter"></i>
+            </a>
+            <a href="https://www.instagram.com">
+                <i class="fab fa-instagram myfooter"></i>
+            </a>
+        </section>
+    </div>
+    <!---------------------------------------------------------------------------------------------------->
+</body>
+</html>
