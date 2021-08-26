@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TiendaSV | Inicio</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="shortcut icon" href="images/heart.png">
+  <script src="js/myshooping.js" async></script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <strong>
+        <div class="logo">
+          Mi Tienda Online
+        </div>
+      </strong>
+    </div>
+
+    <div class="navbar-container">
+      <div class="topnav">
+
+        <a href="index.html">Inicio</a>
+        <a href="contact.html">Contactenos</a>
+        <a href="about.html">Acerca de nosotros</a>
+      </div>
+
+      <!--CART-->
+      <div id="cart-info" class="nav-info cart-info">
+        <span class="cart-info__icon"><i class="fas fa-shopping-cart"></i></span>
+        <p><span id="item-count">0 </span> items
+        </p>
+      </div>
+
+      <section class="cart" id="cart">
+        <h1 class="section-header">CART</h1>
+        <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">$0</span>
+        </div>
+
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+      </section>
+
+    </div>
+  </header>
+
+  <div class="main-container">
+    <p class="title">Mi tienda de Tecnología </p>
+  </div>
+
+
+  <div id="filterButtons">
+    <button class="btn active" onclick="filterSelection('all')">Todo</button>
+    <button class="btn" onclick="filterSelection('Roses')">Laptops</button>
+    <button class="btn" onclick="filterSelection('Tulips')">Celulares</button>
+    <button class="btn" onclick="filterSelection('Orchids')">Accesorios</button>
+  </div>
+
+
+  <div class="container">
+    <!--Row 1-->
+    <div class="row">
+      <div class="products">
+        <div class="product Roses">
+          <img src="images/roses.jpg" class="product__image" alt="Roses">
+          <h5 class="product-title">LAPTOP DELL</h5>
+          <p>De última generación pefecta para el trabajo</p>
+          <div class="shop-item-details">
+            <h3 class="product__price">$1200</h3>
+            <button class="btn btn--primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product Roses">
+          <img src="images/roses1.jpg" class="product__image" alt="Roses1">
+          <h5 class="product-title">LAPTOP HP</h5>
+          <p>Perfecta para viajes de negocio con larga duración de batería</p>
+          <div class="shop-item-details">
+            <h3 class="product__price">$1400</h3>
+            <button class="btn btn--primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product Roses">
+          <img src="images/roses2.jpg" class="product__image" alt="Roses2">
+          <h5 class="product-title">LAPTOP LENOVO</h5>
+          <p>Perfecta para estudiantes y proyectos de trabajo</p>
+          <div class="shop-item-details">
+            <h3 class="product__price">$900</h3>
+            <button class="btn btn--primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+    <!--Row 2-->
+    <div class="row">
+      <div class="products">
+
+          <div class="product Tulips">
+          <img src="images/tulips.jpg" class="product__image" alt="Tulips">
+          <h5 class="product-title">CELULAR SAMSUNG</h5>
+        <p>Mejor resolución del mercado</p>
+          <div class="shop-item-details">
+            <h3 class="product__price">$500</h3>
+            <button class="btn btn--primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product Tulips">
+          <img src="images/tulips1.jpg" class="product__image" alt="Tulips1">
+          <h5 class="product-title">CELULAR HUAWEI</h5>
+          <p> Procesador más rápido</p>
+          <div class="shop-item-details">
+            <h3 class="product__price">$400</h3>
+            <button class="btn btn--primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product Tulips">
+          <img src="images/tulips2.jpg" class="product__image" alt="Tulips2">
+          <h5 class="product-title">CELULAR LG</h5>
+        <p>Mayor almacenamiento para tus archivos, fotos y videos</p>
+          <div class="shop-item-details">
+            <h3 class="product__price">$400</h3>
+            <button class="btn btn--primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+  
+
+      </div>
+
+    </div>
+
+        <!--Row 3-->
+    <div class="row">
+      <div class="products">
+        <div class="product Orchids">
+          <img src="images/orchids.jpg" class="product__image" alt="Orchids">
+          <h5 class="product-title"> AURICULARES BLUETOOTH</h5>
+          <p>Con sonido envolvente</p>
+          <div class="shop-item-details">
+            <h3 class="product__price">$50</h3>
+            <button class="btn btn--primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product Orchids">
+          <img src="images/orchids1.jpg" class="product__image" alt="Orchids1">
+          <h5 class="product-title"> TECLADO BLUETOOTH</h5>
+          <p>Brilla en la oscuridad</p> 
+          <div class="shop-item-details">
+            <h3 class="product__price">$40</h3>
+            <button class="btn btn--primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+  
+        <div class="product Orchids">
+          <img src="images/orchids2.jpg" class="product__image" alt="Orchids2">
+          <h5 class="product-title"> MOUSE INALAMBRICO</h5>
+            <p> Para una mayor comodidad a la hora de trabajar</p>
+          <div class="shop-item-details">
+            <h3 class="product__price">$20</h3>
+            <button class="btn btn--primary ADD_TO_CART">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer style="text-align:center; background-color: rgba(135, 97, 97, 0.472);">
+    <h3>My Shooping Center</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde odio voluptas ea natus, itaque, enim aliquid eligendi exercitationem sequi expedita ex aspernatur dolorem modi nulla labore voluptatem, blanditiis accusantium obcaecati.</p>
+    
+  </footer>
+
+  <script>
+    filterSelection('all')
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("product");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    function w3AddClass(element, name) {
+      var i, arrl, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("filterButtons");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
+
+</body>
+
+</html>
